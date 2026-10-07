@@ -2,10 +2,760 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>My Website</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Jan Edmon | IT Portfolio</title>
+
+    <meta
+        name="description"
+        content="Personal portfolio of Jan Edmon - IT Professional and Web Developer."
+    >
+
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet"
+    >
 </head>
+
 <body>
-    <h1>Welcome to My Website</h1>
-    <p>This is the homepage.</p>
+
+    <!-- =========================
+         NAVIGATION
+    ========================== -->
+    <header class="navbar">
+        <div class="container nav-container">
+
+            <a href="#home" class="logo">
+                <span>&lt;</span>JE<span>/&gt;</span>
+            </a>
+
+            <nav class="nav-menu" id="navMenu">
+                <a href="#home" class="nav-link active">Home</a>
+                <a href="#about" class="nav-link">About</a>
+                <a href="#skills" class="nav-link">Skills</a>
+                <a href="#projects" class="nav-link">Projects</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </nav>
+
+            <button
+                class="menu-toggle"
+                id="menuToggle"
+                aria-label="Toggle navigation"
+                aria-expanded="false"
+            >
+                ☰
+            </button>
+
+        </div>
+    </header>
+
+
+    <!-- =========================
+         HERO
+    ========================== -->
+    <main>
+
+        <section class="hero section" id="home">
+
+            <div class="container hero-container">
+
+                <div class="hero-content">
+
+                    <p class="hero-intro">
+                        Hello, I'm
+                    </p>
+
+                    <h1>
+                        Jan <span>Edmon</span>
+                    </h1>
+
+                    <h2>
+                        IT Professional & Web Developer
+                    </h2>
+
+                    <p class="hero-description">
+                        I build practical, user-friendly, and reliable
+                        web-based systems that help organizations work
+                        smarter and more efficiently.
+                    </p>
+
+                    <div class="hero-buttons">
+
+                        <a href="#projects" class="btn btn-primary">
+                            View My Work
+                        </a>
+
+                        <a href="#contact" class="btn btn-outline">
+                            Contact Me
+                        </a>
+
+                    </div>
+
+                    <div class="hero-socials">
+
+                        <a href="#" aria-label="Facebook">
+                            FB
+                        </a>
+
+                        <a href="#" aria-label="GitHub">
+                            GH
+                        </a>
+
+                        <a href="#" aria-label="LinkedIn">
+                            IN
+                        </a>
+
+                    </div>
+
+                </div>
+
+
+                <div class="hero-visual">
+
+                    <div class="code-card">
+
+                        <div class="code-header">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+
+                        <div class="code-body">
+
+                            <p>
+                                <span class="code-purple">const</span>
+                                developer = {
+                            </p>
+
+                            <p class="indent">
+                                name:
+                                <span class="code-green">
+                                    "Jan Edmon"
+                                </span>,
+                            </p>
+
+                            <p class="indent">
+                                role:
+                                <span class="code-green">
+                                    "IT Professional"
+                                </span>,
+                            </p>
+
+                            <p class="indent">
+                                skills: [
+                            </p>
+
+                            <p class="indent2">
+                                <span class="code-green">"PHP"</span>,
+                                <span class="code-green">"MySQL"</span>,
+                            </p>
+
+                            <p class="indent2">
+                                <span class="code-green">"HTML"</span>,
+                                <span class="code-green">"CSS"</span>,
+                            </p>
+
+                            <p class="indent2">
+                                <span class="code-green">"JavaScript"</span>
+                            </p>
+
+                            <p class="indent">
+                                ]
+                            </p>
+
+                            <p>
+                                };
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             ABOUT
+        ========================== -->
+
+        <section class="section about" id="about">
+
+            <div class="container">
+
+                <div class="section-heading">
+
+                    <p class="section-label">
+                        ABOUT ME
+                    </p>
+
+                    <h2>
+                        Building technology with purpose.
+                    </h2>
+
+                    <p>
+                        I enjoy creating systems that solve real-world
+                        problems and make everyday work easier.
+                    </p>
+
+                </div>
+
+
+                <div class="about-grid">
+
+                    <div class="about-text">
+
+                        <p>
+                            I'm an IT professional interested in web
+                            development, database systems, and practical
+                            software solutions.
+                        </p>
+
+                        <p>
+                            My focus is on developing systems that are
+                            simple to use, organized, maintainable, and
+                            useful for the people who actually use them.
+                        </p>
+
+                        <p>
+                            I particularly enjoy working on management
+                            systems, automation, and applications that
+                            improve office workflows.
+                        </p>
+
+                    </div>
+
+
+                    <div class="about-info">
+
+                        <div class="info-card">
+                            <span class="info-number">01</span>
+                            <h3>Problem Solving</h3>
+                            <p>
+                                Turning everyday problems into practical
+                                technology solutions.
+                            </p>
+                        </div>
+
+                        <div class="info-card">
+                            <span class="info-number">02</span>
+                            <h3>Web Development</h3>
+                            <p>
+                                Creating responsive and functional
+                                web-based applications.
+                            </p>
+                        </div>
+
+                        <div class="info-card">
+                            <span class="info-number">03</span>
+                            <h3>Database Systems</h3>
+                            <p>
+                                Designing structured and reliable
+                                database-driven applications.
+                            </p>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             SKILLS
+        ========================== -->
+
+        <section class="section skills" id="skills">
+
+            <div class="container">
+
+                <div class="section-heading center">
+
+                    <p class="section-label">
+                        MY SKILLS
+                    </p>
+
+                    <h2>
+                        Technologies I work with.
+                    </h2>
+
+                </div>
+
+
+                <div class="skills-grid">
+
+                    <div class="skill-card">
+
+                        <div class="skill-icon">
+                            &lt;/&gt;
+                        </div>
+
+                        <h3>HTML</h3>
+
+                        <p>
+                            Semantic and responsive website structure.
+                        </p>
+
+                    </div>
+
+
+                    <div class="skill-card">
+
+                        <div class="skill-icon">
+                            #
+                        </div>
+
+                        <h3>CSS</h3>
+
+                        <p>
+                            Modern layouts, responsive design,
+                            and visual styling.
+                        </p>
+
+                    </div>
+
+
+                    <div class="skill-card">
+
+                        <div class="skill-icon">
+                            JS
+                        </div>
+
+                        <h3>JavaScript</h3>
+
+                        <p>
+                            Interactive and dynamic web experiences.
+                        </p>
+
+                    </div>
+
+
+                    <div class="skill-card">
+
+                        <div class="skill-icon">
+                            PHP
+                        </div>
+
+                        <h3>PHP</h3>
+
+                        <p>
+                            Server-side applications and
+                            business systems.
+                        </p>
+
+                    </div>
+
+
+                    <div class="skill-card">
+
+                        <div class="skill-icon">
+                            DB
+                        </div>
+
+                        <h3>MySQL</h3>
+
+                        <p>
+                            Database design, queries, and
+                            data management.
+                        </p>
+
+                    </div>
+
+
+                    <div class="skill-card">
+
+                        <div class="skill-icon">
+                            IT
+                        </div>
+
+                        <h3>IT Support</h3>
+
+                        <p>
+                            Technical troubleshooting and
+                            system support.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             PROJECTS
+        ========================== -->
+
+        <section class="section projects" id="projects">
+
+            <div class="container">
+
+                <div class="section-heading">
+
+                    <p class="section-label">
+                        FEATURED PROJECTS
+                    </p>
+
+                    <h2>
+                        Things I've been building.
+                    </h2>
+
+                    <p>
+                        A few examples of systems and applications
+                        I work on.
+                    </p>
+
+                </div>
+
+
+                <div class="projects-grid">
+
+                    <!-- PROJECT 1 -->
+
+                    <article class="project-card featured">
+
+                        <div class="project-image payroll-project">
+
+                            <div class="project-window">
+
+                                <div class="window-bar">
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                </div>
+
+                                <div class="dashboard-preview">
+
+                                    <div class="preview-sidebar"></div>
+
+                                    <div class="preview-content">
+
+                                        <div class="preview-title"></div>
+
+                                        <div class="preview-cards">
+
+                                            <div></div>
+                                            <div></div>
+                                            <div></div>
+
+                                        </div>
+
+                                        <div class="preview-table">
+
+                                            <span></span>
+                                            <span></span>
+                                            <span></span>
+                                            <span></span>
+
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="project-content">
+
+                            <span class="project-category">
+                                WEB APPLICATION
+                            </span>
+
+                            <h3>
+                                Municipal Payroll System
+                            </h3>
+
+                            <p>
+                                A payroll management system designed
+                                to manage employee payroll, salary,
+                                deductions, earnings, payroll periods,
+                                and payslips.
+                            </p>
+
+                            <div class="project-tech">
+
+                                <span>PHP</span>
+                                <span>MySQL</span>
+                                <span>HTML</span>
+                                <span>CSS</span>
+                                <span>JavaScript</span>
+
+                            </div>
+
+                            <a href="#" class="project-link">
+                                View Project →
+                            </a>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- PROJECT 2 -->
+
+                    <article class="project-card">
+
+                        <div class="project-placeholder">
+                            <span>&lt;/&gt;</span>
+                        </div>
+
+                        <div class="project-content">
+
+                            <span class="project-category">
+                                WEB SYSTEM
+                            </span>
+
+                            <h3>
+                                Office Management System
+                            </h3>
+
+                            <p>
+                                A web-based system designed to organize
+                                office records, workflows, and
+                                administrative tasks.
+                            </p>
+
+                            <div class="project-tech">
+
+                                <span>PHP</span>
+                                <span>MySQL</span>
+                                <span>HTML</span>
+                                <span>CSS</span>
+
+                            </div>
+
+                            <a href="#" class="project-link">
+                                View Project →
+                            </a>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- PROJECT 3 -->
+
+                    <article class="project-card">
+
+                        <div class="project-placeholder">
+                            <span>IT</span>
+                        </div>
+
+                        <div class="project-content">
+
+                            <span class="project-category">
+                                UPCOMING
+                            </span>
+
+                            <h3>
+                                IT Helpdesk System
+                            </h3>
+
+                            <p>
+                                A ticketing system for managing
+                                technical support requests and
+                                monitoring service status.
+                            </p>
+
+                            <div class="project-tech">
+
+                                <span>HTML</span>
+                                <span>CSS</span>
+                                <span>JavaScript</span>
+
+                            </div>
+
+                            <a href="#" class="project-link">
+                                Coming Soon →
+                            </a>
+
+                        </div>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             CONTACT
+        ========================== -->
+
+        <section class="section contact" id="contact">
+
+            <div class="container contact-container">
+
+                <div class="section-heading center">
+
+                    <p class="section-label">
+                        CONTACT
+                    </p>
+
+                    <h2>
+                        Let's build something useful.
+                    </h2>
+
+                    <p>
+                        Have a project, idea, or system in mind?
+                        Feel free to get in touch.
+                    </p>
+
+                </div>
+
+
+                <div class="contact-box">
+
+                    <form id="contactForm">
+
+                        <div class="form-row">
+
+                            <div class="form-group">
+
+                                <label for="name">
+                                    Name
+                                </label>
+
+                                <input
+                                    type="text"
+                                    id="name"
+                                    name="name"
+                                    placeholder="Your name"
+                                    required
+                                >
+
+                            </div>
+
+
+                            <div class="form-group">
+
+                                <label for="email">
+                                    Email
+                                </label>
+
+                                <input
+                                    type="email"
+                                    id="email"
+                                    name="email"
+                                    placeholder="your@email.com"
+                                    required
+                                >
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="form-group">
+
+                            <label for="subject">
+                                Subject
+                            </label>
+
+                            <input
+                                type="text"
+                                id="subject"
+                                name="subject"
+                                placeholder="Project or inquiry"
+                                required
+                            >
+
+                        </div>
+
+
+                        <div class="form-group">
+
+                            <label for="message">
+                                Message
+                            </label>
+
+                            <textarea
+                                id="message"
+                                name="message"
+                                rows="6"
+                                placeholder="Tell me about your project..."
+                                required
+                            ></textarea>
+
+                        </div>
+
+
+                        <button
+                            type="submit"
+                            class="btn btn-primary"
+                        >
+                            Send Message
+                        </button>
+
+                    </form>
+
+                    <div
+                        id="formMessage"
+                        class="form-message"
+                    ></div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- =========================
+         FOOTER
+    ========================== -->
+
+    <footer class="footer">
+
+        <div class="container footer-container">
+
+            <div>
+                <a href="#home" class="logo">
+                    <span>&lt;</span>JE<span>/&gt;</span>
+                </a>
+
+                <p>
+                    IT Professional & Web Developer
+                </p>
+            </div>
+
+
+            <p class="copyright">
+                © <span id="currentYear"></span>
+                Jan Edmon. All rights reserved.
+            </p>
+
+
+            <a href="#home" class="back-top">
+                ↑
+            </a>
+
+        </div>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
 </body>
 </html>
